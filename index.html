@@ -1,1 +1,30 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <script src="https://github.com/listentorick/sol/constants.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/fabric.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/slyvester.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/camera.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/body.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/ship.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/solarsystem.js" type="text/javascript"></script>
+        <script src="https://github.com/listentorick/sol/solarsystemRenderer.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/hohmannNavigation.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/hohmanNavigationRenderer.js" type="text/javascript"></script>
+		<script src="https://github.com/listentorick/sol/velocityvelot.js" type="text/javascript"></script>
+	    <script src="https://github.com/listentorick/sol/oneachframe.js" type="text/javascript"></script>
+        <script src="https://github.com/listentorick/sol/game.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			function start() {		
+				Game.start();
+				window.onEachFrame(Game.run);
+			}
+				
+
+		</script>
+	</head>
+	<body onload="start()">
+		<canvas id="canvas" width="500px" height="500px"></canvas>
+	</body>
+</html>
